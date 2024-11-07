@@ -1,0 +1,10 @@
+{
+  "appId": "com.optio.appupdater",
+  "appName": "optio-mobile-app-webassets-live-update-updater",
+  "webDir": "prebuilt-dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

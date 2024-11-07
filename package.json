@@ -1,0 +1,24 @@
+{
+  "name": "capacitor-app",
+  "version": "1.0.0",
+  "description": "Delivery mechanism for prebuilt optio-frontend assets to Appflow Live Update channels",
+  "type": "module",
+  "keywords": [
+    "capacitor",
+    "mobile"
+  ],
+  "scripts": {
+
+  },
+  "dependencies": {
+    "@capacitor/core": "latest",
+    "@capacitor/camera": "latest",
+    "@capacitor/splash-screen": "latest"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "latest",
+    "vite": "^5.4.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
