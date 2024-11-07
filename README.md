@@ -26,15 +26,17 @@ From the root of this repo, run:
 It will build the monorepo mobile web assets, commit them inside this repo, and push them to the remote.
 
 Then log into the Appflow console (https://dashboard.ionicframework.com).
-
-Open the the optio-mobile-app-webassets-live-update-updater app.
+Open the optio-mobile-app-webassets-live-update-updater app.
 
 Build -> New build
 
 Pick the latest commit from this repo, corresponding to the current main HEAD monorepo commit 
 (you should see the commit message clearly reference the SHA of that commit).
+
 Pick "Target platform: Web"
+
 Enable "Live Update" -> "Production" channel.
+
 Click "Build".
 
 The build should only take a few moments, since nothing is actually built, it just distributes our web assets to the
