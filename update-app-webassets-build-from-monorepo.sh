@@ -17,3 +17,9 @@ cp -r ../Monorepo/apps/staged-assets/* ./prebuilt-dist
 
 
 
+echo "Committing and pushing latest build"
+
+
+# TODO name commit
+# TODO Coomit and push latest changes
+
