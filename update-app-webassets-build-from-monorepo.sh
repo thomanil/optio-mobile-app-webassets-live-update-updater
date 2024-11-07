@@ -25,7 +25,7 @@ if git diff --quiet ./prebuilt-dist && git diff --cached --quiet ./prebuilt-dist
     echo "--No changes to built web assets since last commit, nothing to do. Aborting.--"
     exit 1
 else
-    COMMIT_COMMENT="Mobile app dist files built from monorepo commit ${MONOREPO_CURRENT_GIT_SHA}"
+    COMMIT_COMMENT="Mobile app dist files built from Monorepo commit: ${MONOREPO_CURRENT_GIT_SHA}"
     git add ./prebuilt-dist
     git commit -m "${COMMIT_COMMENT}"
     git push origin main
