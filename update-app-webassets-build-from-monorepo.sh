@@ -7,6 +7,7 @@ cd ..
 cd Monorepo
 MONOREPO_CURRENT_GIT_SHA="$(git rev-parse HEAD)"
 cd apps
+# TODO Check that no diff exists locally and on main branch
 ./scripts/clean-build-and-synch-app.sh production
 
 
