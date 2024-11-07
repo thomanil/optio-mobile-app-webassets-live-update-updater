@@ -2,7 +2,7 @@
 
 Place this in same parent directory as the monorepo. 
 
-So, if you do:
+So, if you do this from root of this repo:
     
 ```
 cd ..
