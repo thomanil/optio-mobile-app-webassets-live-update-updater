@@ -3,9 +3,9 @@ set -e
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 echo "--Building monorepo mobile app web assets--"
-MONOREPO_CURRENT_GIT_SHA="$(git rev-parse HEAD)"
 cd ..
 cd Monorepo
+MONOREPO_CURRENT_GIT_SHA="$(git rev-parse HEAD)"
 cd apps
 ./scripts/clean-build-and-synch-app.sh production
 
