@@ -8,7 +8,7 @@
     "mobile"
   ],
   "scripts": {
-
+    "build": "echo 'Nothing to build, assets are prebuilt in prebuilt-dist/'"
   },
   "dependencies": {
     "@capacitor/core": "latest",
