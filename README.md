@@ -1,12 +1,13 @@
-## Created with Capacitor Create App
+## Delivery repo for optio frontend builds
 
-This app was created using [`@capacitor/create-app`](https://github.com/ionic-team/create-capacitor-app),
-and comes with a very minimal shell for building an app.
+Place this in same parent directory as the monorepo. 
 
-### Running this example
+So, if you do:
 
-To run the provided example, you can use `npm start` command.
+cd ..
+cd Monorepo
 
-```bash
-npm start
-```
+, then you should end up in the monorepo.
+
+
+(See apps/README.md in monorepo for more info.)
