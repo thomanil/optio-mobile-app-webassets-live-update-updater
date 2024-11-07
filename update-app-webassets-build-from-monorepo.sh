@@ -29,7 +29,7 @@ else
     git add ./prebuilt-dist
     git commit -m "${COMMIT_COMMENT}"
     git push origin main
-    echo "Done! Can now build and run live update from Appflow."
+    echo "Done! Latest mobile app web asset build discoverable in Appflow, can now be distributed via Live Update there."
 fi
 
 
