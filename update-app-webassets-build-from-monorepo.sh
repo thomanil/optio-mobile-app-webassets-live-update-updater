@@ -30,7 +30,8 @@ else
     git commit -m "${COMMIT_COMMENT}"
     git push origin main
     echo "Done! Latest mobile app web asset build discoverable in Appflow, can now be distributed via Live Update there."
-    echo "Built based on: https://github.com/OptioIncentives/Monorepo/commit/${MONOREPO_CURRENT_GIT_SHA}"
+    echo "Built based on:"
+    echo "https://github.com/OptioIncentives/Monorepo/commit/${MONOREPO_CURRENT_GIT_SHA}"
 fi
 
 
