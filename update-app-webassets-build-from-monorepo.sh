@@ -16,10 +16,18 @@ cd "$SCRIPT_DIR" # Back to this repo
 cp -r ../Monorepo/apps/staged-assets/* ./prebuilt-dist
 
 
+# First check if there are any changes in prebuilt-dist
+if git diff --quiet ./prebuilt-dist && git diff --cached --quiet ./prebuilt-dist; then
+    echo "no changes to built web assets since last commit, nothing to do. Aborting."
+    exit 1
+else
+    echo "Committing and pushing latest build"
+    COMMIT_COMMENT="Mobile app dist files built from monorepo commit ${MONOREPO_CURRENT_GIT_SHA}"
+    git add ./prebuilt-dist
+    git commit -m "$COMMIT_MSG"
+    git push origin main
+    echo "Done! Can now build and run live update from Appflow."
+fi
 
-echo "Committing and pushing latest build"
 
-
-# TODO name commit
-# TODO Coomit and push latest changes
 
