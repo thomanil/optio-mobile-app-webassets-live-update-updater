@@ -4,15 +4,15 @@ SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 echo "--Building monorepo mobile app web assets--"
 MONOREPO_CURRENT_GIT_SHA="$(git rev-parse HEAD)"
-#cd ..
-#cd Monorepo
-#cd apps
-#./scripts/clean-build-and-synch-app.sh production
+cd ..
+cd Monorepo
+cd apps
+./scripts/clean-build-and-synch-app.sh production
 
 
 echo "--Copying app web assets back to the updater repo--"
-#cd "$SCRIPT_DIR" # Back to this repo
-#cp -r ../Monorepo/apps/staged-assets/* ./prebuilt-dist
+cd "$SCRIPT_DIR" # Back to this repo
+cp -r ../Monorepo/apps/staged-assets/* ./prebuilt-dist
 
 
 
